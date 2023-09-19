@@ -50,7 +50,6 @@ impl Piece {
         // loop over each bit in the bitmask
         for y in 0..self.height {
             for x in 0..self.width {
-
                 // if the bit is a "1" then we need to rotate it
                 // this form of rotation keeps the piece in the bottom right corner of the bitmask
                 if self.shape & (0b1 << y * 8 + x) != 0 {
